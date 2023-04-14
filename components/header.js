@@ -1,19 +1,22 @@
 import React from "react";
 import { View, StyleSheet, Text } from "react-native";
-const header = () => {
+const header = (props) => {
     return (
-        <View>
+        <View style={styles.heading}>
             <Text style={{fontSize: 50}}>
-                Ez Grade Aid OP APP
+                {props.title}
             </Text>
         </View>
     );
 }
 const styles = StyleSheet.create({
     heading: {
-        paddingVertical: 100,
-        alignContent: 'center'
-        
+        height: "100%",
+        minWidth: "100%",
+        backgroundColor: 'lemonchiffon',
+        alignContent: 'center',
+        alignItems: 'center',
+        borderRadius: 20
     },
 })
 export default header;
