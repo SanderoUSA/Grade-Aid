@@ -9,7 +9,7 @@ const btn = (props) => {
 }
 const styles = StyleSheet.create({
     butn: {
-        paddingVertical: 10,
+        paddingVertical: 12,
         alignContent: 'center',
         justifyContent: 'center',
         width: 100,
